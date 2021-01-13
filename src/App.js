@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React, {useState} from 'react'
 import './App.css';
+import Appbar from './components/Appbar'
+import SecondSection from './components/SecondSection';
+import ThirdSection from './components/ThirdSection';
+import FourthSection from './components/FourthSection'
+import Footer from './components/Footer';
+import FifthSection from './components/FifthSection'
+import SixthSection from './components/SixthSection';
+
+
 
 function App() {
+const [appBar, setAppBar]= useState(false)
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+       <Appbar appBar={appBar} setAppBar={setAppBar}/>
+     
+      <SecondSection/>
+      <ThirdSection/>
+      <FourthSection/>
+      <FifthSection/>
+<SixthSection/>
+      <Footer/>
     </div>
   );
 }

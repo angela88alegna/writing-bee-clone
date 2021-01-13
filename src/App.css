@@ -1,38 +1,251 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+*
+{margin:0;
+padding:0;
+box-sizing: border-box;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position:sticky;
+  background-color: rgb(245, 240, 240);
+  height: 5rem;
+  display: flex;
+  color: #858282;
+ 
+}
+.higher-appbar{
+  position:sticky;
+  background-color: rgb(245, 240, 240);
+  min-height: 5rem;
+  position:sticky;
+  display:flex;
+  color: #858282;
+  align-items: flex-start;
+}
+
+.list{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content:space-between
+
+}
+.list li{
+  margin: 18px;
+ font-size: 18px;
+  }
+
+.list2{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+ 
+  justify-content:flex-start;
+  margin-left: 14px;
+  margin-bottom: 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.list2 li{
+margin-top: 1rem;
+justify-content:left
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+  .appbar-links{
+    text-decoration: none;
+    color:#858282;
+
   }
-  to {
-    transform: rotate(360deg);
+
+
+/* toggle app links by clicking menubutton */
+  .list-items
+  {
+    display: flex;
   }
+  .dont-show-items{
+    display:none
+  }
+ /* end --toggle app links by clicking menubutton */
+
+
+ 
+/* change app links layout in smaller screen */
+
+  .change-link-position{
+    
+    flex-direction: column;
+  }
+
+  .visualize-links{
+    display:flex;
+  }
+
+  .herr{
+   align-items: flex-start;
+  }
+  .newclass{
+    display:flex !important;
+  }
+
+
+
+  /* second section */
+
+
+
+ .second-section-div{
+  
+   width: 100%;
+   height: 100vh;
+   background-image:  url('https://thewritingbee.org/assets/home/scroll-756530c70a56396e12228c58ed694cf0e909a16ff547b04f914de69f8b9fe555.png'),url('https://thewritingbee.org/assets/home/handwriting-ae883dc85504eb3fa5e0b2f04f4668858bbad825996e62b7b4d3bbe5e4937066.jpg') ,url('https://thewritingbee.org/assets/home/handwriting-ae883dc85504eb3fa5e0b2f04f4668858bbad825996e62b7b4d3bbe5e4937066.jpg');
+   background-repeat: no-repeat;
+   background-position:  center top;
+   background-size: 150px, 100%
+    
+ }
+
+ .all-kids{
+   font-size: 1em;
+  font-weight: 600;
+  color:#000
+ }
+ 
+ .div-p{
+position:relative;
+ top:50%
+ }
+
+
+
+
+ /* third section */
+
+ .title-third-section{
+   font-size: 40px;
+   font-weight: 800;
+   text-transform: uppercase;
+   text-align: center;
+   color: #535252;
+   margin-top: 200px;
+   margin-bottom: 100px;
+ }
+ .heading4-third-section{
+  color: #535252;
+text-transform: uppercase;
+ }
+
+ .but{
+  background-color: #007BFF ;
+  font-size: 1.125rem;
+  padding: 10px ;
+  line-height: 1.5;
+  border-radius: 0.25em;
+  min-width: 400px;
+  margin: 40px auto;
+  text-transform: uppercase;
+  font-weight: 900;
+  color:#fff;
+  outline:none;
+  border: transparent 1px solid
+ }
+
+ .div-woman{
+color: #535252;
+padding: 40px;
+position: relative;
+margin: 50px auto 10px;
+max-width: 720px;
+
+ }
+ .div-woman h2{
+  margin: 0;
+  color: #007BFF;
+  font-weight: 700;
+  font-family: NexaRustScriptL-1;
+  font-size: 1.35rem;
+ }
+ .div-woman p{
+   text-align: center;
+   margin: 50px auto 10px;
+   max-width: 720px;
+   font-size: 1.1rem;
+   letter-spacing: 2;
+ }
+ 
+ /* center picture woman */
+
+ .div-woman2{
+   position:absolute;
+   position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+
+ }
+
+
+
+
+ /* fourth section  */
+
+ .fourth-section-div{
+  text-align: center;
+  background-color:  #545454;
+ 
+
+}
+.section{
+
+  /*conditional rendering, see js */
+
+}
+.section p{
+  color:#fff;
+  margin-top: 70px;
+}
+.section h1{
+  color:#fff;
+
+}
+
+
+
+/* fifth section */
+
+.div-fifth-section{
+  background-image: url('https://thewritingbee.org/assets/works_header-65a398664095b97b27180354faf9f16740476256576321935484384a49f6f7a8.jpg');
+ /* min-height: 500px; */
+ background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: #545454
+}
+
+ .div-fifth-section p{
+   margin: 10px 40px 0 40px;
+  font-size: 1.5rem;
+  color: #545454
+}
+
+.div-fifth-section h1{
+  color: #545454;
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  
+} 
+
+
+
+/* sixth-section */
+
+.div-sixth-section{
+  background-color: #fff;
+  text-align: center;
+  color:#545454;
+  padding-bottom:100px
+
 }
